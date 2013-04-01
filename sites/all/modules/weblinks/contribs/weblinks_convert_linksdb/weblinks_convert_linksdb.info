@@ -1,0 +1,11 @@
+name = Web Links Convert LinksDB
+description = Allows users to convert LinksDB package to Web Links.
+core = 6.x
+dependencies[] = weblinks
+package = Weblinks
+; Information added by drupal.org packaging script on 2011-02-25
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "weblinks"
+datestamp = "1298620717"
+
