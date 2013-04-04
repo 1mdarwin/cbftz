@@ -1,0 +1,20 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide.
+Este es el archivo global desde donde parte las configuraciones para lo que es la configuracion para mobiles
+By Darwin Betancourt
+Date: 4 April 2013
+Change Log: 4 April 2013
+*/
+#zone-branding{
+	background: #43b2d6;
+}
+.site-name a{
+	color: #055b12;
+	width: 30px;
+}
+.site-name a:hover{
+	color: #339900;	
+}
+.site-slogan{
+	font-weight: bold;
+} 
