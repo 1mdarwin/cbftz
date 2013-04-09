@@ -6,15 +6,19 @@ Date: 4 April 2013
 Change Log: 4 April 2013
 */
 #zone-branding{
-	background: #43b2d6;
+	background: #ffc;
 }
 .site-name a{
 	color: #055b12;
 	width: 30px;
+	text-shadow: 1px 1px #000;
 }
 .site-name a:hover{
 	color: #339900;	
 }
 .site-slogan{
 	font-weight: bold;
+}
+#page{
+	background-color: #390;
 } 
