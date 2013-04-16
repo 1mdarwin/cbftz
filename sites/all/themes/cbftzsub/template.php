@@ -11,7 +11,7 @@
  * for more information on this topic.
  */
  
-function respond_form_alter(&$form, &$form_state, $form_id) {
+function cbftzsub_form_alter(&$form, &$form_state, $form_id) {
   switch($form_id) {
     /**
       * Make some adjustments to the login form to use HTML5 Placeholder values. 
@@ -30,7 +30,7 @@ function respond_form_alter(&$form, &$form_state, $form_id) {
   }
 }
 
-function respond_preprocess_node(&$vars) {
+function cbftzsub_preprocess_node(&$vars) {
   /**
     * if user pictures are enabled on nodes, inject them with the body field
     */

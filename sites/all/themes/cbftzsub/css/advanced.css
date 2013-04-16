@@ -32,8 +32,8 @@
 
 .navigation ul li a.active,
 .navigation ul li a.active-trail,
-.navigation ul li a.active:hover,
-.navigation ul li a.active-trail:hover
+/*.navigation ul li a.active:hover,
+.navigation ul li a.active-trail:hover*/
 .navigation ul li a.active:focus,
 .navigation ul li a.active-trail:focus {
   background: -moz-linear-gradient(top, #23b58c 0%, #43C200 50%, #43C200 51%, #339900 100%); /* FF3.6+ */

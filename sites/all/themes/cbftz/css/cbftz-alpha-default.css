@@ -1,1 +1,75 @@
 /* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+/**********************************************
+* 2.3. Zone menu
+**********************************************/
+.menu-toggle {
+  display: none; }
+
+.navigation {
+  background: transparent;
+  display: block !important;
+  margin: 26px 0;
+  padding-bottom: 0;
+  /* Main menu */
+  /* Secondary menu */ }
+  .navigation h2 {
+    display: none; }
+  .navigation .primary-menu ul,
+  .navigation .second-menu ul {
+    display: block;
+    float: left;
+    /* LTR */
+    margin: 0;
+    width: 100%; }
+    .navigation .primary-menu ul li,
+    .navigation .second-menu ul li {
+      float: inherit;
+      font-size: 0.8em;
+      width: auto; }
+      .navigation .primary-menu ul li a,
+      .navigation .second-menu ul li a {
+        display: inline;
+        border-left-width: 0;
+        border-right-width: 0; }
+        .navigation .primary-menu ul li a.active, .navigation .primary-menu ul li a:hover,
+        .navigation .second-menu ul li a.active,
+        .navigation .second-menu ul li a:hover {
+          border-left-width: 0;
+          border-right-width: 0; }
+      .navigation .primary-menu ul li.first a,
+      .navigation .second-menu ul li.first a {
+        border-left: 1px solid #cccccc;
+        /* LTR */ }
+      .navigation .primary-menu ul li.last a,
+      .navigation .second-menu ul li.last a {
+        border-right: 1px solid #cccccc;
+        /* LTR */ }
+  .navigation .primary-menu {
+    float: left;
+    /* LTR */
+    margin-right: 12px;
+    /* LTR */
+    margin-left: 0;
+    /* LTR */ }
+  .navigation .second-menu {
+    clear: inherit;
+    float: right;
+    /* LTR */
+    margin-right: 0; }
+
+.zone-menu .block-menu h2.block-title {
+  margin-bottom: 1em; }
+.zone-menu .block-menu ul.menu li {
+  font-size: 0.8em;
+  width: auto; }
+  .zone-menu .block-menu ul.menu li a {
+    display: inline;
+    border-left-width: 0;
+    border-right-width: 0; }
+    .zone-menu .block-menu ul.menu li a.active, .zone-menu .block-menu ul.menu li a:hover {
+      border-left-width: 0;
+      border-right-width: 0; }
+  .zone-menu .block-menu ul.menu li.first a {
+    border-left: 1px solid #cccccc; }
+  .zone-menu .block-menu ul.menu li.last a {
+    border-right: 1px solid #cccccc; }
