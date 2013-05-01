@@ -3,174 +3,66 @@
 Este es el archivo global desde donde parte las configuraciones para lo que es la configuracion para mobiles
 By Darwin Betancourt
 Date: 4 April 2013
-Change Log: 4 April 2013
+Change Log: 30 April 2013
 */
-#zone-branding{
-	background: #ffc;
+#zone-branding-wrapper {
+    /*
+    fix for ie z-index problem, add this on the top container that holds your menu block
+    */
+    position:relative;
+    z-index:2
 }
-.branding-data{
-	text-align: center;
+#block-system-main-menu {
+    margin-bottom:1em;
 }
-.site-name a{
-	color: #055b12;
-	width: 30px;
-	text-shadow: 1px 1px #000;
+#block-system-main-menu ul.menu {
+    margin:0;
+    padding:0;
+    list-style:none;
+    position:relative
 }
-.site-name a:hover{
-	color: #390;	
-}
-.site-slogan{
-	font-weight: bold;
-}
-#page{
-	background-color: #dbdbdb;
-}
-#edit-search-block-form--2{
-	width:16em;
-}
-/**********************************************
-* 2.3. Zone menu
-**********************************************/
-/**
-* Navigation
-*/
-.menu-toggle {
-  background: #666;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  border-radius: 3px;
-  clip: inherit;
-  display: block;
-  height: 36px;
-  margin: 0;
-  padding: 0;
-  /*position: absolute;*/
-  left: 10px;
-  /* LTR */
-  top: -132px;
-  /*top: -46px;*/
-  width: 270px; 
-  /*width: 36px; */
-}
-  .menu-toggle:hover {
-    background: #777; }
-  .menu-toggle .toggle-help {
-    color: #999;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.2em;
-    font-variant: small-caps;
-    font-weight: 600;
-    margin: 0;
-    padding: 0 0 10px 0;
-    position: absolute;
-    left: 45px;
-    /* LTR */
-    top: 6px; }
-  .menu-toggle .line {
-    border-bottom: 2px solid #CCC;
+#block-system-main-menu ul.menu li a {
     display: block;
-    margin: 4px auto 4px auto;
-    width: 26px; }
-  .menu-toggle .first-line {
-    padding-top: 4px; }
-  .menu-toggle .last-line {
-    padding-bottom: 0; }
-
-.navigation {
-  background: #396;
-  display: none;
-  padding-bottom: 10px;
-  /* Main menu */
-  /* Secondary menu */ }
-  .navigation h2 {
-    color: #999;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.2em;
-    font-variant: small-caps;
-    font-weight: 600;
-    margin: 0;
-    padding: 0 0 10px 0; }
-  .navigation .primary-menu,
-  .navigation .second-menu {
+    line-height: 1em;
+    padding: 0.5em;
+    outline:none;
+    background:#333;
+    color:#FFF;
+    border:1px solid #666;
+}
+#block-system-main-menu ul.menu li a:hover {
+    background:#000;
+    text-decoration:none
+}
+#block-system-main-menu ul.menu li span.over {
+    background:#CCC;
+    color: #000000;
     display: block;
-    font-size: 1em;
-    margin: 0 10px;
-    padding: 10px 0 0 0; }
-    .navigation .primary-menu ul,
-    .navigation .second-menu ul {
-      margin: 0; }
-      .navigation .primary-menu ul li,
-      .navigation .second-menu ul li {
-        display: inline-block;
-        margin: 0 0 7px 0;
-        padding: 0;
-        width: 100%; }
-        .navigation .primary-menu ul li a,
-        .navigation .second-menu ul li a {
-          display: block;
-          font-family: "Open Sans", sans-serif;
-          font-weight: 600;
-          padding: 12px 16px;
-          text-decoration: none; }
-          .navigation .primary-menu ul li a:hover,
-          .navigation .second-menu ul li a:hover {
-            text-decoration: none; }
-  .navigation .primary-menu ul li a {
-    background-color: #eeeeee;
-    border: 1px solid #cccccc;
-    color: #888888;
-    text-transform: capitalize; }
-    .navigation .primary-menu ul li a.active, .navigation .primary-menu ul li a:hover {
-      background-color: white;
-      border: 1px solid #cccccc; }
-    .navigation .primary-menu ul li a.active {
-      color: black; }
-    .navigation .primary-menu ul li a:hover {
-      color: #999999; }
-  .navigation .second-menu {
-    clear: left; }
-    .navigation .second-menu ul li a {
-      background-color: #eeeeee;
-      border: 1px solid #cccccc;
-      color: #888888;
-      padding: 12px 18px;
-      text-transform: capitalize; }
-      .navigation .second-menu ul li a.active, .navigation .second-menu ul li a:hover {
-        background-color: white;
-        border: 1px solid #cccccc; }
-      .navigation .second-menu ul li a.active {
-        color: black; }
-      .navigation .second-menu ul li a:hover {
-        color: #999999; }
-
-.zone-menu .block-menu {
-  display: block;
-  font-size: 1em;
-  margin: 0;
-  padding: 10px 0 0 0; }
-  .zone-menu .block-menu ul.menu li {
-    display: inline-block;
-    float: left;
-    list-style: none;
-    margin: 0 0 7px 0;
-    padding: 0;
-    width: 100%; }
-    .zone-menu .block-menu ul.menu li a {
-      background-color: #eeeeee;
-      border: 1px solid #cccccc;
-      color: #888888;
-      display: block;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 600;
-      padding: 12px 16px;
-      text-decoration: none;
-      text-transform: capitalize; }
-      .zone-menu .block-menu ul.menu li a.active, .zone-menu .block-menu ul.menu li a:hover {
-        background-color: white;
-        border: 1px solid #cccccc; }
-      .zone-menu .block-menu ul.menu li a.active {
-        color: black; }
-      .zone-menu .block-menu ul.menu li a:hover {
-        color: #999999;
-        text-decoration: none; }
+    float: right;
+    height: 33px;
+    line-height: 30px;
+    padding: 0 0.5em;
+    text-align: center;
+    cursor:pointer
+}
+#block-system-main-menu ul.menu li span.over:hover {
+    background:#F90;
+    color:#FFF
+}
+#block-system-main-menu ul.menu ul {
+    margin:0;
+    padding:0;
+    display:none;
+}
+#block-system-main-menu ul.menu ul li a {
+    text-indent:0;
+    color:#000;
+    background:#CCC;
+    text-decoration:none;
+}
+#block-system-main-menu ul.menu ul li a:hover {
+    background: #EBEBEB
+}
+#block-system-main-menu ul.menu ul li a.last {
+    border-bottom: none;
+}
