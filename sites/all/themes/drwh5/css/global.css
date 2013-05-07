@@ -1,0 +1,16 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+/*.flexslider{
+	display:none;
+}*/
+body {
+	background: #dbdbdb url("../images/body_bg.png");
+}
+#zone-user{
+	background: url("../images/header_bg.png") repeat-x scroll 0 0 transparent;
+	height: 40px;
+}
+
+
+
+	
