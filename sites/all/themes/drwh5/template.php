@@ -22,7 +22,7 @@ function drwh5_form_alter(&$form, &$form_state, $form_id ){
 			$form['pass']['#attributes']['placeholder'] = t('Password...');
 			break;
 		case 'search_block_form':
-			$form['search_block_form']['#attributes']['placeholder'] = t('Search..');
+			$form['search_block_form']['#attributes']['placeholder'] = t('Search...');
 			break;
 		
 		default:
