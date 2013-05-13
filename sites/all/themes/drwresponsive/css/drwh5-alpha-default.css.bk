@@ -1,0 +1,138 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+/*
+ * Slideshow 
+ */
+#transparency{
+	position: absolute;
+	background: #000;
+	opacity: 0.8;
+	height: 25.5%;
+	bottom: 8%;
+	width: 100%;
+}
+#transpager{
+	position: absolute;
+	bottom: 0%;
+	height: 8%;
+	width: 100%;
+	background-color: #003366;
+	opacity: .95;
+}
+#bodyslide{
+	position: absolute;
+	left: 15px;
+	bottom: 10%;
+	width: 85%;
+	color: #FFF;
+	
+}
+#bodyslide h2 a {
+	/*background-color: rgba(0,0,0,0.7);*/
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 600;
+	left: 1px;
+	padding: 25px 0;
+	position: absolute;
+	text-indent: 5px;
+	text-shadow: 1px 1px 1px #000000;
+	bottom: 22px;
+	max-width: 78.5%;
+	text-decoration: none;
+	/*width: 100%;*/
+}
+#urlslide{
+	position: absolute;
+	height: 1em;
+	width: 6em;
+	top: 80%;
+	left: 90%;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: .725em;
+	padding:1em 1em;
+	-ms-border-radius:0.6em;
+	-webkit-border-radius:0.6em;
+	-moz-border-radius:0.6em;
+	border-radius: 3px;
+	box-shadow: .2em .2em .4em 0em #888;
+	background: #F25824;
+}
+
+ /*-----------------------------*/ 
+
+ .views-slideshow-pager-field-item{
+ 	float: left;
+ 	padding-left: 1.2em;
+ }
+ .views-slideshow-pager-fields{
+ 	width: 100%;
+ }
+
+
+/*.flexslider { display:block; }
+body{background:#390;}*/
+input.form-text{
+	width:230px;
+}
+/**
+	SECTION FOR IMAGES
+*/
+.img-der{
+	float: right;
+	padding: 5px;
+
+}
+.img-izq{
+	float: left;
+	padding: 5px;
+}
+/*
+
+	Main Menu System - Responsive
+*/
+#block-system-main-menu {
+    background: -moz-linear-gradient(center top , #FFFFFF 0%, #F2F2F2 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 15px;
+    height: 33px;
+}
+#block-system-main-menu li ul li {
+    width: 200px;
+}
+#block-system-main-menu li {
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#block-system-main-menu li ul {
+    left: 0px;
+    position: absolute !important;
+    z-index: 999;
+}
+/*
+	TAKE PROPERTIES FORM GLOBAL
+
+*/
+#block-system-main-menu ul.menu li{
+    float: left;
+    min-width: 8.666em;
+}
+/*
+	FORMS
+*/
+button:focus, button:active, input:focus, 
+input:active, select:focus, select:active, 
+textarea:focus, textarea:active{
+	box-shadow:0 0 7px #0062A0;
+	z-index: 1;
+}
+/*
+	IMG
+*/
+img {
+	max-width: 100%;
+}
+

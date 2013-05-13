@@ -1,0 +1,143 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+/*.flexslider{
+	display:none;
+}*/
+body {
+	background: #dbdbdb url("../images/body_bg.png");
+}
+#zone-user{
+	background: url("../images/header_bg.png") repeat-x scroll 0 0 transparent;
+	height: 87px;
+}
+
+
+#zone-branding-wrapper {
+    /*
+    fix for ie z-index problem, add this on the top container that holds your menu block
+    */
+    position:relative;
+    z-index:2
+}
+#block-system-main-menu {
+    margin-bottom:1em;
+}
+#block-system-main-menu ul.menu {
+    margin:0;
+    padding:0;
+    list-style:none;
+    position:relative;
+
+}
+#block-system-main-menu ul.menu li a {
+    background: -moz-linear-gradient(center top , #FFFFFF 0%, #F2F2F2 100%) repeat scroll 0 0 transparent;
+    border: 1px solid #E5E5E5;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    border-image: none;
+    box-shadow: 1px 0 rgba(255, 255, 255, 0.75);        
+    color:#383838;
+    display: block;
+    line-height: 1em;
+    /*padding: 0.5em;*/
+    outline:none;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+#block-system-main-menu ul.menu li a.active{
+    /*background: -moz-linear-gradient(center top , #FFFFFF 0%, #F25824 50%) repeat scroll 0 0 transparent;*/
+    background: #F25824;
+    border-radius: 3px;
+    -moz-border-radius:30px;    
+    color: #FFF;
+    /*padding-top: 1em;
+    padding-bottom: 1em;*/
+}
+#block-system-main-menu ul.menu li.leaf{
+    list-style-image: none;
+    list-style-type: none;
+    padding: 0;
+    top: -1px;
+}
+#block-system-main-menu ul.menu li.expanded {
+    list-style-image: url("../images/orange-bullet.png");
+    list-style-type: square;
+    top: -1px;
+}
+#block-system-main-menu ul.menu li a:hover {
+    background:#383838;
+    color: #FFF;
+    text-decoration:none;    
+}
+#block-system-main-menu ul.menu li span.over {
+    background:#CCC;
+    color: #000000;
+    display: block;
+    float: right;
+    height: 33px;
+    line-height: 30px;
+    /*padding: 0 0.5em;*/
+    text-align: center;
+    cursor:pointer
+}
+#block-system-main-menu ul.menu li span.over:hover {
+    background:#F25824;
+    color:#FFF
+}
+#block-system-main-menu ul.menu ul {
+    margin:0;
+    padding:0;
+    display:none;    
+}
+#block-system-main-menu ul.menu ul li a {
+    
+    color:#FFF;
+    display: block;
+    background:#383838;
+    border-top: 1px solid #4D4D4D;
+    border-bottom: 1px solid #262626;    
+    padding: 8px 15px;
+    text-decoration:none;
+    text-indent:0;
+
+}
+#block-system-main-menu ul.menu ul li a:hover {
+    background: #F25824;
+    color: #fff;
+}
+#block-system-main-menu ul.menu ul li a.last {
+    border-bottom: none;
+}
+/*
+    Forms
+*/
+/* Search box*/
+input.form-text {
+    width: 17em;
+}
+/*
+    IMG
+*/
+img {
+    max-width: 100% !important;
+}
+/*
+    LIST 
+*/
+ul.menu li.active {
+    color:#F25824 !important;
+}
+/*
+   ZONE POSTSCRIPT
+*//*
+#zone-postscript-wrapper{
+    background: #383838;
+    border-top: 10px solid #F25824;    
+}*/
+
+
+
+	
