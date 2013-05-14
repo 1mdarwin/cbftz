@@ -6,6 +6,9 @@
 body {
 	background: #dbdbdb url("../images/body_bg.png");
 }
+h1{
+    color: #383838;
+}
 #zone-user{
 	background: url("../images/header_bg.png") repeat-x scroll 0 0 transparent;
 	height: 87px;
@@ -62,9 +65,12 @@ body {
     padding: 0;
     top: -1px;
 }
-#block-system-main-menu ul.menu li.expanded a{
-    list-style-image: url("../images/orange-bullet.png");
-    list-style-type: square;
+#block-system-main-menu ul.menu li.expanded {
+    list-style-image: none;
+    list-style-type: none;
+    top: -1px;
+}
+#block-system-main-menu ul.menu li.expanded{
     top: -1px;
 }
 #block-system-main-menu ul.menu li a:hover {
@@ -111,6 +117,56 @@ body {
 #block-system-main-menu ul.menu ul li a.last {
     border-bottom: none;
 }
+.menu-toggle {
+  background: #383838;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  border-radius: 3px;
+  clip: inherit;
+  display: block;
+  height: 36px;
+  margin: 0;
+  padding: 0;  
+  left: 10px;
+  /* LTR */
+  top: -132px;
+
+}
+.menu-toggle:hover {background: #F25824; }
+  .menu-toggle .toggle-help {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2em;
+    font-variant: small-caps;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 0 10px 0;
+    position: absolute;
+    left: 45px;
+    /* LTR */
+    top: 6px; }
+  .menu-toggle .line {
+    border-bottom: 2px solid #CCC;
+    display: block;
+    margin: 4px auto 4px auto;
+    width: 26px; }
+  .menu-toggle .first-line {
+    padding-top: 4px; }
+  .menu-toggle .last-line {
+    padding-bottom: 0; }
+#block-system-main-menu a.parent:after{
+    background: url('../images/orange-bullet.png') no-repeat !important;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    left: 0.7em;
+    position: absolute;
+    width: 10px;
+}
+#block-system-main-menu a.parent:hover{
+    background: #383838 !important;       
+}
 /*
     Forms
 */
@@ -142,15 +198,23 @@ ul.menu li.active {
 */
 #zone-postscript-wrapper{
     background: #383838;
-    border-top: 10px solid #F25824;
+    border-top: 5px solid #F25824;
     color: #fff;
+}
+#zone-postscript-wrapper a{
+    color:#FFF;
+    text-decoration: none;
+}
+#zone-postscript-wrapper a:hover{
+    color:#F25824;
+    text-decoration: none;
 }
 /*
     ZONE FOOTER
 */
 #zone-footer-wrapper{
-    background: #F25824
-    border-top: 10px solid #333333;
+    background: #F25824;
+    border-top: 5px solid #333333;
     color: #FFF;
 }
 /*
