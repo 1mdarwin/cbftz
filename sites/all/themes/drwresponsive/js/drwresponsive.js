@@ -14,7 +14,9 @@
           })        
          
         //This condition will act under the 'mobile' size, and will not be executed on ie6 and ie7
-          if (d.to == 'mobile' && !$('html').hasClass('ie6') && !$('html').hasClass('ie7')) {       
+          if (d.to == 'mobile' && !$('html').hasClass('ie6') && !$('html').hasClass('ie7')) {     
+            //$(menuid+" a.menu-toggle").unbind();
+            $("a.menu-toggle").remove();
 
             // Add menuToggle Link
             $(menuid).before('<a href="#" class="menu-toggle"><span class="line first-line first"></span><span class="line"></span><span class="line"></span><span class="line last-line last"></span><span class="toggle-help">Menu</span></a>');
@@ -24,29 +26,33 @@
                 $(menuid).slideToggle();
             });
            
-             //Remove the ´hover´ event in the dropdown menu scrip below              
+             //Remove the ´hover´ event in the dropdown menu script below              
              $(menuid+' li').unbind();
               
              //Add a span tag that will aft as the expand button, you can change the output of that button here
-             $(menuid+" ul.menu li.expanded").prepend( $("<span class='over' href='#'>&darr;</span>") );     
+             //$(menuid+" ul.menu li.expanded").prepend( $("<span class='over' href='#'>&darr;</span>") );     
+             $(menuid+" ul.menu li.expanded a.parent").attr("href","#");
                       
              //Create an open/close action on the accordion after clicking on the expand element         
-             $(menuid+' ul.menu span.over').click(function (event) {     
+             $(menuid+' ul.menu li.expanded a.parent').click(function (event) {  
                  event.preventDefault();
                  if ($(this).siblings('ul').is( ":visible" )){
-                 $(this).siblings('ul').slideUp('fast');  
-                 } else {           
-                 $(this).siblings('ul').slideDown('fast');  
+                 $(this).siblings('ul').slideUp('fast');
+                 } else {
+                 $(this).siblings('ul').slideDown('fast');
              }                       
              });             
           }               
           //this condition will work for all sizes exept mobile, but will act on ie6 and ie7 browsers     
-          if (d.to != 'mobile' | $('html').hasClass('ie7') ) {   
-             //$(menuid+" ul.menu li.expanded a").append( $("<span class='list' href='#'>&raquo;</span>") );             
-             //remove the expand elements from the accordion menu             
-             $(menuid+" span.over").remove();    
+          if (d.to != 'mobile' | $('html').hasClass('ie7') ) {                
+             //remove the expand spam elements from the mobile menu             
+             $(" a.menu-toggle").remove();
+             // Show main menu
+             $(menuid).css('display','block');
+             //remove the expand elements from the accordion menu
+             $(menuid+" span.over").remove();
              //hide the open accordion items removing the display block style
-             $(menuid+" ul li ul").removeAttr("style");  
+             $(menuid+" ul li ul").removeAttr("style");
              //Simple hide/show event for the dropdown menus 
              $(menuid+' li').hover(
                  function(){

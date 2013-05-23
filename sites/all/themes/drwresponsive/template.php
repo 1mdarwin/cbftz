@@ -23,6 +23,7 @@ function drwresponsive_form_alter(&$form, &$form_state, $form_id ){
 			break;
 		case 'search_block_form':
 			$form['search_block_form']['#attributes']['placeholder'] = t('Search...');
+			$form['search_block_form']['#attributes']['id'] = t('#search_box');
 			break;
 		
 		default:

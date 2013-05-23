@@ -9,6 +9,22 @@ body {
 h1{
     color: #383838;
 }
+a:link, a:visited{
+    color: #F25824;
+    font-weight: bold;
+    text-decoration: none;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+a:hover{
+    color: #383838;
+}
+li a.active{
+    color: #383838;
+}
 #zone-user{
 	background: url("../images/header_bg.png") repeat-x scroll 0 0 transparent;
 	height: 87px;
@@ -56,6 +72,7 @@ h1{
     border-radius: 3px;
     -moz-border-radius:30px;    
     color: #FFF;
+    border-top: 5px solid #383838;
     /*padding-top: 1em;
     padding-bottom: 1em;*/
 }
@@ -69,13 +86,12 @@ h1{
     list-style-image: none;
     list-style-type: none;
     top: -1px;
-}
-#block-system-main-menu ul.menu li.expanded{
-    top: -1px;
+    padding: 0;
 }
 #block-system-main-menu ul.menu li a:hover {
     background:#383838;
     color: #FFF;
+    border-top: 5px solid #F25824;
     text-decoration:none;    
 }
 #block-system-main-menu ul.menu li span.over {
@@ -98,21 +114,20 @@ h1{
     padding:0;
     display:none;    
 }
-#block-system-main-menu ul.menu ul li a {
-    
+#block-system-main-menu ul.menu ul li a {    
     color:#FFF;
     display: block;
     background:#383838;
     border-top: 1px solid #4D4D4D;
     border-bottom: 1px solid #262626;    
+    opacity: .9;
     padding: 8px 15px;
     text-decoration:none;
     text-indent:0;
-
 }
 #block-system-main-menu ul.menu ul li a:hover {
     background: #F25824;
-    color: #fff;
+    color: #fff;    
 }
 #block-system-main-menu ul.menu ul li a.last {
     border-bottom: none;
@@ -131,6 +146,11 @@ h1{
   left: 10px;
   /* LTR */
   top: -132px;
+
+  -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
 }
 .menu-toggle:hover {background: #F25824; }
@@ -171,8 +191,19 @@ h1{
     Forms
 */
 /* Search box*/
-input.form-text {
+#search_box input.form-text {
+    background: url('../images/search-field-bg.png') no-repeat scroll center right transparent;
+    width: 17em !important;    
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#search_box input:focus{
+    background: #F25824;
     width: 17em;
+    color: #fff;
 }
 /*
     IMG
@@ -183,9 +214,11 @@ input.form-text {
 }*/
 .img-izq{
     float: left;
+    padding: 5px;
 }
 .img-der{
     float: right;
+    padding: 5px;
 }
 /*
     LIST 
@@ -218,12 +251,17 @@ ul.menu li.active {
     color: #FFF;
 }
 /*
-    H2
+    NODE TITLE
 */
 h2.node-title a{
     color: #383838;
     font-family: 'Open Sans',sans-serif;
     text-decoration: none;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 h2.node-title a:hover{
     color: #F25824;
@@ -237,6 +275,11 @@ h2.block-title{
     color: #383838;
     font-family: 'Open Sans',sans-serif;
     text-decoration: none;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .item-list a:hover{
     color: #F25824;
@@ -255,6 +298,7 @@ h2.block-title{
     ZONE CONTENT
 */
 #zone-content-wrapper img{
+    height: auto;
     max-width: 100%;
 }
 

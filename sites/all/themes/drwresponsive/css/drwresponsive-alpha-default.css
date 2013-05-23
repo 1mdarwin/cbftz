@@ -83,10 +83,10 @@
 
 
 /*.flexslider { display:block; }
-body{background:#390;}*/
+body{background:#390;}
 input.form-text{
 	width:230px;
-}
+}*/
 /**
 	SECTION FOR IMAGES
 */
@@ -105,6 +105,7 @@ input.form-text{
 */
 #block-system-main-menu {
     background: -moz-linear-gradient(center top , #FFFFFF 0%, #F2F2F2 100%) repeat scroll 0 0 transparent;
+    background: -webkit-linear-gradient(top,#ffffff 0%,#f2f2f2 100%); /* Chrome*/
     border: 1px solid #e5e5e5;
     margin-bottom: 15px;
     height: 33px;
@@ -137,7 +138,7 @@ input.form-text{
 button:focus, button:active, input:focus, 
 input:active, select:focus, select:active, 
 textarea:focus, textarea:active{
-	box-shadow:0 0 7px #0062A0;
+	box-shadow:0 0 7px #383838;
 	z-index: 1;
 }
 /*
@@ -146,34 +147,7 @@ textarea:focus, textarea:active{
 img {
 	max-width: 100%;
 }
-/*
-	NODE TITLE
-*/
-h2.node-title a{
-	color: #383838;
-	font-family: 'Open Sans',sans-serif;
-	text-decoration: none;
-}
-h2.node-title a:hover{
-	color: #F25824;
-	text-decoration: none;
-}
-h2.block-title{
-	font-family: 'Open Sans',sans-serif;
-	color: #F25824;
-}
-.item-list a{	
-	color: #383838;
-	font-family: 'Open Sans',sans-serif;
-	text-decoration: none;
-}
-.item-list a:hover{
-	color: #F25824;
-	text-decoration: none;
-}
-.submitted{
-	color: #F25824;
-}
+
 .list{
 	background: url('../images/orange-bullet.png') no-repeat;
 }
